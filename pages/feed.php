@@ -247,6 +247,15 @@ function togglePostMenu(id) {
     const el = document.getElementById('pdrop-' + id);
     el.style.display = el.style.display === 'block' ? 'none' : 'block';
 }
+
+// Ferme le dropdown quand on clique ailleurs
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.post-menu')) {
+        document.querySelectorAll('.post-dropdown').forEach(function(el) {
+            el.style.display = 'none';
+        });
+    }
+});
 function deletePost(id) {
     if (!confirm('Delete this post?')) return;
     fetch('<?= BASE_URL ?>/api/delete_post.php', {
