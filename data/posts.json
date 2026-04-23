@@ -52,5 +52,23 @@
         "filter": "none",
         "created_at": "2026-04-23T13:39:11Z",
         "updated_at": "2026-04-23T13:39:11Z"
+    },
+    {
+        "id": 9,
+        "user_id": 7,
+        "caption": "NIGGERS",
+        "image": "post_1776953097_7.png",
+        "filter": "fade",
+        "created_at": "2026-04-23T14:04:57Z",
+        "updated_at": "2026-04-23T14:04:57Z"
+    },
+    {
+        "id": 10,
+        "user_id": 1,
+        "caption": "dwd",
+        "image": "",
+        "filter": "none",
+        "created_at": "2026-04-23T19:49:25Z",
+        "updated_at": "2026-04-23T19:49:25Z"
     }
 ]

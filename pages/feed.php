@@ -21,6 +21,7 @@ foreach ($friends as $f) {
     }
 }
 $friend_ids[] = $me['id']; // include own posts
+$friend_count = count(array_filter($friend_ids, fn($id) => $id !== $me['id']));
 
 // Filter posts: show own + friends
 $feed_posts = array_filter($all_posts, fn($p) => in_array($p['user_id'], $friend_ids));
@@ -83,6 +84,22 @@ include __DIR__ . '/../includes/header.php';
                     </div>
                 <?php endforeach; ?>
             <?php endif; ?>
+        </div>
+
+        <div class="card stats-card">
+            <h3>Quick stats</h3>
+            <div class="stat-row">
+                <span>Friends</span>
+                <strong><?= $friend_count ?></strong>
+            </div>
+            <div class="stat-row">
+                <span>Your posts</span>
+                <strong><?= count(array_filter($all_posts, fn($p) => $p['user_id'] === $me['id'])) ?></strong>
+            </div>
+            <div class="stat-row">
+                <span>Feed items</span>
+                <strong><?= count($feed_posts) ?></strong>
+            </div>
         </div>
     </aside>
 
@@ -162,7 +179,7 @@ include __DIR__ . '/../includes/header.php';
                     <div class="post-actions">
                         <button class="like-btn <?= $liked ? 'liked' : '' ?>"
                                 onclick="toggleLike(<?= $post['id'] ?>, this)">
-                            <?= $liked ? '❤️' : '🤍' ?>
+                            <span class="like-icon">♥</span>
                             <span class="like-count"><?= count($post_likes) ?></span>
                         </button>
                         <button class="comment-toggle-btn"
@@ -222,7 +239,7 @@ function sendFriendRequest(userId, btn) {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ action: 'send', receiver_id: userId })
     }).then(r => r.json()).then(d => {
-        if (d.success) { btn.textContent = '✓ Sent'; btn.disabled = true; }
+        if (d.success) { btn.textContent = 'Sent'; btn.disabled = true; }
         else alert(d.error);
     });
 }

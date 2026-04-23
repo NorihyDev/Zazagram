@@ -67,7 +67,7 @@ include __DIR__ . '/../includes/header.php';
                 onerror="this.onerror=null;this.src='<?= BASE_URL ?>/assets/images/default_avatar.png'"
             >
             <?php if ($is_own_profile): ?>
-                <label for="avatar-upload" class="avatar-edit-btn" title="Change photo">✏️</label>
+                <label for="avatar-upload" class="avatar-edit-btn" title="Change photo">Edit</label>
                 <input type="file" id="avatar-upload" accept="image/*" style="display:none"
                        onchange="uploadAvatar(this)">
             <?php endif; ?>
@@ -142,7 +142,7 @@ include __DIR__ . '/../includes/header.php';
                         <div class="post-actions">
                             <button class="like-btn <?= $liked ? 'liked' : '' ?>"
                                     onclick="toggleLike(<?= $post['id'] ?>, this)">
-                                <?= $liked ? '❤️' : '🤍' ?>
+                                <span class="like-icon">♥</span>
                                 <span class="like-count"><?= $like_count ?></span>
                             </button>
                             <button class="comment-toggle-btn" onclick="toggleComments(<?= $post['id'] ?>)">

@@ -2,7 +2,7 @@
 </main><!-- /.main-content -->
 
 <footer class="site-footer">
-    <p>© 2026 Zazagram</p>
+    <p>© 2026 Zazagram — Created by Norihy</p>
 </footer>
 
 <script src="<?= BASE_URL ?>/assets/js/main.js"></script>

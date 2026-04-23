@@ -152,5 +152,82 @@
         "message": "alex_photo sent you a message",
         "is_read": false,
         "created_at": "2026-04-23T13:38:20Z"
+    },
+    {
+        "id": 15,
+        "user_id": 1,
+        "actor_id": 7,
+        "type": "friend_request",
+        "reference_id": 9,
+        "reference_type": "friend",
+        "message": "THEBOSSZAZA sent you a friend request",
+        "is_read": true,
+        "created_at": "2026-04-23T14:05:05Z"
+    },
+    {
+        "id": 16,
+        "user_id": 7,
+        "actor_id": 1,
+        "type": "like",
+        "reference_id": 9,
+        "reference_type": "post",
+        "message": "alex_photo liked your post",
+        "is_read": false,
+        "created_at": "2026-04-23T18:23:28Z"
+    },
+    {
+        "id": 17,
+        "user_id": 1,
+        "actor_id": 8,
+        "type": "friend_request",
+        "reference_id": 10,
+        "reference_type": "friend",
+        "message": "frek sent you a friend request",
+        "is_read": false,
+        "created_at": "2026-04-23T18:24:58Z"
+    },
+    {
+        "id": 18,
+        "user_id": 4,
+        "actor_id": 8,
+        "type": "friend_request",
+        "reference_id": 11,
+        "reference_type": "friend",
+        "message": "frek sent you a friend request",
+        "is_read": false,
+        "created_at": "2026-04-23T18:24:59Z"
+    },
+    {
+        "id": 19,
+        "user_id": 5,
+        "actor_id": 8,
+        "type": "friend_request",
+        "reference_id": 12,
+        "reference_type": "friend",
+        "message": "frek sent you a friend request",
+        "is_read": false,
+        "created_at": "2026-04-23T18:24:59Z"
+    },
+    {
+        "id": 20,
+        "user_id": 6,
+        "actor_id": 8,
+        "type": "friend_request",
+        "reference_id": 13,
+        "reference_type": "friend",
+        "message": "frek sent you a friend request",
+        "is_read": false,
+        "created_at": "2026-04-23T18:25:00Z"
+    },
+    {
+        "id": 21,
+        "user_id": 7,
+        "actor_id": 8,
+        "type": "friend_request",
+        "reference_id": 14,
+        "reference_type": "friend",
+        "message": "frek sent you a friend request",
+        "is_read": false,
+        "created_at": "2026-04-23T18:25:01Z"
     }
 ]

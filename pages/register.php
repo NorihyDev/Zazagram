@@ -61,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $page_title = 'Register';
+$body_class = 'no-nav';
 include __DIR__ . '/../includes/header.php';
 ?>
 
