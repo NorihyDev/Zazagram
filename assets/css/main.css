@@ -270,6 +270,9 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; }
         gap: 0.5rem;
     }
 }
+.nav-btn {
+    position: relative;
+}
 .nav-btn:hover {
     background: rgba(232,98,10,.18);
     color: #fff;
@@ -277,7 +280,8 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; }
 }
 .badge {
     position: absolute;
-    top: 0; right: 0;
+    top: -8px;
+    right: -8px;
     background: var(--orange);
     color: #fff;
     font-size: 0.58rem;
@@ -290,6 +294,7 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; }
     justify-content: center;
     padding: 0 3px;
     border: 2px solid var(--bg);
+    z-index: 10;
 }
 .nav-avatar-wrap { position: relative; margin-left: 4px; }
 .nav-avatar {
