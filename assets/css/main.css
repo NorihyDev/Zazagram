@@ -1549,3 +1549,8 @@ body.login-page .demo-btn:hover {
     }
     .nav-avatar-wrap { display: flex !important; }
 }
+@media (min-width: 641px) {
+    #mobile-nav-panel {
+        display: none !important;
+    }
+}
