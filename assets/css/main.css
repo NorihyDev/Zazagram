@@ -1554,3 +1554,10 @@ body.login-page .demo-btn:hover {
         display: none !important;
     }
 }
+/* FIX MOBILE NAV */
+#mobile-nav-panel {
+    display: none !important;
+}
+#mobile-nav-panel.open {
+    display: flex !important;
+}
