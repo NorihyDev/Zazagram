@@ -30,7 +30,7 @@ $page_title = $page_title ?? 'Zazagram';
             <span class="logo-text">Zazagram</span>
         </a>
 
-        <div class="mobile-menu-row mobile-only">
+        <div class="mobile-menu-row mobile-only" style="margin-left: auto;">
             <button type="button" class="icon-btn menu-toggle" title="Menu" onclick="toggleMobileNav()">☰</button>
         </div>
 
